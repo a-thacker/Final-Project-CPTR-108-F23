@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Dinosaur Game</title>
+  <link href="game.css" rel="stylesheet">
+</head>
+  <body>
+    <style>
+      body { 
+        background: url('web background.jpg');
+        background-size: cover;
+      }
+    </style>
+    <div id="game">
+      <div id="ground"></div>
+      <div id="character"></div>
+      <div id="rock"></div>
+      <div id="constantDragon"></div>
+    </div>
+    <div class="flexContainerButton"> <!--Information bellow the game: score and home button-->
+      <div id="goHome" class="flexItemButton"><p><strong>Home</strong></p></div>
+      <div id="scoreButton" class="flexItemButton"><h1 id="score">0</h1></div>
+    </div>
+    <div id="words"><strong>Press space to jump!</strong></div>
+      <style>
+          #words{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 30px;
+          }
+      </style>
+    <script src="game.js"></script>
+  </body>
+</html>
